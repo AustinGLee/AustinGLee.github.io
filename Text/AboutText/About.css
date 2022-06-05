@@ -151,12 +151,13 @@ footer a {
   margin: 0 1rem 3rem 1rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
   }
+  
 }
 
 @media (min-width: 600px) {
@@ -165,5 +166,13 @@ footer a {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+  }
+
+  picture {
+    margin: 3rem auto 0 auto;
+    flex-basis: 25%;
+    background-color: #59331d;
+    border-radius: 10px;
+    width: 60%;
   }
 }
