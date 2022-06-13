@@ -35,37 +35,39 @@ header {
 }
 
 /* navbar styling */
-nav ul {
+nav {
+    ul {
     @include zero-value;
     list-style-type: none;
     @include flex-row-wrap;
     justify-content: center;
 }
 
-nav li {
+li {
     margin: $no-margin 1rem 1rem 1rem;
     font-size: 1.3rem;
 }
 
 /* max width on the image in pixels */
-nav .logo img {
+.logo img {
     max-width: 150px;
 }
 
 /* flex basis on the image container, li */
-nav .logo {
+.logo {
     flex-basis: 100%;
     text-align: center;
 }
 
-nav a {
+a {
     color: $white;
     text-decoration: none;
     display: block;
 }
 
-nav a:hover {
+a:hover {
     color: $secondary-orange;
+}
 }
 
 /* establishes a white background */
