@@ -1,0 +1,32 @@
+@media (min-width: 1200px) {
+
+
+    .main {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        max-width: 90%;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    p {
+        max-width: fit-content;
+    }
+
+    .card-container {
+        margin-top: $standard-marginx;
+        @include flex-row-wrap;
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 30%;
+        margin: $standard-margin*2;
+    }
+}

@@ -2,14 +2,14 @@ body {
   background-color: #082B59;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 2;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -121,7 +121,6 @@ figcaption {
   text-decoration: none;
   order: 1;
   align-self: flex-start;
-
 }
 
 .button:hover {
@@ -157,11 +156,8 @@ footer a {
     flex-flow: row wrap;
     justify-content: space-between;
   }
-  
 }
-
 @media (min-width: 600px) {
-
   .main {
     display: flex;
     flex-flow: row wrap;
@@ -175,4 +171,4 @@ footer a {
     border-radius: 10px;
     width: 60%;
   }
-}
+}/*# sourceMappingURL=About.css.map */

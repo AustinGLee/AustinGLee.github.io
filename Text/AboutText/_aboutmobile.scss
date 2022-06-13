@@ -1,0 +1,147 @@
+body {
+    background-color: $bkgrd-color;
+    @include zero-value;
+    font-family: $body-font;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $header-font;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: $no-margin;
+}
+
+/* make images flexible */
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $brown;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    border-bottom: $standard-margin solid $secondary-orange;
+}
+
+/* navbar styling */
+nav ul {
+    @include zero-value;
+    list-style-type: none;
+    @include flex-row-wrap;
+    justify-content: center;
+}
+
+nav li {
+    margin: $no-margin 1rem 1rem 1rem;
+    font-size: 1.3rem;
+}
+
+/* max width on the image in pixels */
+nav .logo img {
+    max-width: 150px;
+}
+
+/* flex basis on the image container, li */
+nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: $white;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    color: $secondary-orange;
+}
+
+/* establishes a white background */
+.main-bkgd {
+    background: $white url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+}
+
+/* sits inside of the white background, centered */
+.main {
+    max-width: 1200px;
+    margin: $no-margin auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+article {
+    flex-basis: 73%;
+}
+
+picture {
+    margin: 3rem $auto-margin $no-margin $auto-margin;
+    flex-basis: 25%;
+    background-color: $brown;
+    border-radius: $standard-margin;
+    width: 60%;
+}
+
+picture img {
+    border-top-left-radius: $standard-margin;
+    border-top-right-radius: $standard-margin;
+}
+
+figcaption {
+    color: $off-white;
+    padding: 0.5rem;
+}
+
+.button {
+    text-align: center;
+    display: inline-block;
+    background-color: $brown;
+    border-radius: $standard-margin;
+    padding: $standard-margin $standard-margin*2;
+    margin-top: $standard-margin*4;
+    margin-left: $auto-margin;
+    margin-right: $auto-margin;
+    color: $off-white;
+    text-decoration: none;
+    order: 1;
+    align-self: flex-start;
+
+}
+
+.button:hover {
+    background-color: $off-white;
+    color: $brown;
+}
+
+footer {
+    color: $off-white;
+    text-align: center;
+    border-top: $standard-margin solid $secondary-orange5;
+}
+
+footer ul {
+    list-style-type: none;
+    @include zero-value;
+    @include flex-row-wrap;
+    justify-content: center;
+}
+
+footer a {
+    color: $off-white;
+    font-size: 2rem;
+    display: block;
+    margin: $no-margin 1rem 3rem 1rem;
+}

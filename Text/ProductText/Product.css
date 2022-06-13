@@ -2,14 +2,14 @@ body {
   background-color: #082B59;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 2;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -77,7 +77,6 @@ nav a:hover {
 }
 
 /* sits inside of the white background, centered */
-
 .main {
   margin-left: auto;
   margin-right: auto;
@@ -96,10 +95,8 @@ nav a:hover {
 }
 
 .card {
-  margin: 20px 0
+  margin: 20px 0;
 }
-
-
 
 footer {
   color: #f2f2f2;
@@ -124,8 +121,6 @@ footer a {
 }
 
 @media (min-width: 1200px) {
-
-
   .main {
     margin-left: auto;
     margin-right: auto;
@@ -141,6 +136,8 @@ footer a {
   }
 
   p {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
   }
 
@@ -153,12 +150,10 @@ footer a {
 
   .card {
     max-width: 30%;
-    margin: 20px
+    margin: 20px;
   }
 }
-
 @media (min-width: 600px) {
-
   .main {
     margin-left: auto;
     margin-right: auto;
@@ -174,9 +169,10 @@ footer a {
     flex-flow: row wrap;
     justify-content: space-between;
   }
-  
+
   p {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
   }
-
-}
+}/*# sourceMappingURL=Product.css.map */

@@ -1,0 +1,23 @@
+@media (min-width: 600px) {
+
+    $no-margin: 0;
+    $auto-margin: auto;
+
+    @mixin flex-row-wrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .main {
+        @include flex-row-wrap;
+        justify-content: space-between;
+    }
+
+    picture {
+        margin: 3rem $auto-margin $no-margin $auto-margin;
+        flex-basis: 25%;
+        background-color: $brown;
+        border-radius: 10px;
+        width: 60%;
+    }
+}

@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+   
+    @mixin flex-row-wrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .main {
+        @include flex-row-wrap;
+        justify-content: space-between;
+    }
+
+}
